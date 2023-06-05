@@ -1,6 +1,10 @@
 import Header from "./components/Header";
 
-// const RestaurantLayout = ({ children }) => {
+export const metadata = {
+  title: "Detail | Open Table",
+  description: "Clone Open Table",
+};
+
 const RestaurantLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <main>
