@@ -1,4 +1,7 @@
-const Reviews = () => {
+import Star from "@/components/Star";
+import { Review } from "@prisma/client";
+
+const Reviews = ({ reviews }: { reviews: Review[] }) => {
   return (
     <>
       <div className="border-b pb-7 mb-7">
@@ -11,7 +14,9 @@ const Reviews = () => {
           </div>
           <div className="ml-10 w-5/6">
             <div className="flex items-center">
-              <div className="flex mr-5">*****</div>
+              <div className="flex mr-5">
+                <Star reviews={reviews} />
+              </div>
             </div>
             <div className="mt-5">
               <p className="text-lg font-light">

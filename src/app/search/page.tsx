@@ -28,6 +28,7 @@ const fetchRestaurantSearch = (city: string | undefined) => {
       cuisine: true,
       location: true,
       slug: true,
+      reviews: true,
     },
   });
 };
